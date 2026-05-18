@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Gallery</string>
+    <string name="app_name">Opsec</string>
     <string name="add_photos">Add Photos</string>
     <string name="empty_state_title">No photos yet</string>
     <string name="empty_state_subtitle">Tap "Add Photos" to choose images from your device</string>
-    <string name="remove_from_gallery">Remove from Gallery</string>
-    <string name="remove_dialog_title">Remove from Gallery</string>
-    <string name="remove_dialog_message">Remove this image from your gallery?\n\nThe original file will NOT be deleted.</string>
+    <string name="remove_from_opsec">Remove from Opsec</string>
+    <string name="remove_dialog_title">Remove from Opsec</string>
+    <string name="remove_dialog_message">Remove this image from your opsec?\n\nThe original file will NOT be deleted.</string>
     <string name="remove">Remove</string>
     <string name="cancel">Cancel</string>
     <string name="share">Share</string>
@@ -21,6 +21,6 @@
     <string name="date_taken_sort">Date Taken</string>
     <string name="filename_sort">Filename</string>
     <string name="search_placeholder">Search by filename…</string>
-    <string name="removed_from_gallery">Removed from gallery</string>
+    <string name="removed_from_opsec">Removed from opsec</string>
     <string name="unknown">Unknown</string>
 </resources>
