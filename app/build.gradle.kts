@@ -1,4 +1,4 @@
-plugins {
+﻿plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.gallery.app"
+    namespace = "com.opsec.space"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.gallery.app"
+        applicationId = "com.opsec.space"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
