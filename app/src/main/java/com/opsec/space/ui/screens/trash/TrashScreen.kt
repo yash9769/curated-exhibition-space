@@ -1,4 +1,4 @@
-package com.gallery.app.ui.screens.trash
+﻿package com.opsec.space.ui.screens.trash
 
 import android.widget.Toast
 import androidx.compose.foundation.ExperimentalFoundationApi
@@ -25,10 +25,10 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewModelScope
-import com.gallery.app.data.model.ImageItem
-import com.gallery.app.data.repository.ImageRepository
-import com.gallery.app.ui.components.EmptyState
-import com.gallery.app.ui.components.ImageThumbnail
+import com.opsec.space.data.model.ImageItem
+import com.opsec.space.data.repository.ImageRepository
+import com.opsec.space.ui.components.EmptyState
+import com.opsec.space.ui.components.ImageThumbnail
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -156,7 +156,7 @@ fun TrashScreen(
         AlertDialog(
             onDismissRequest = { selectedImageForAction = null },
             title = { Text("Restore or Delete Permanently?") },
-            text = { Text("\"${image.fileName}\" was deleted. Would you like to restore it to your gallery or delete it permanently from storage?") },
+            text = { Text("\"${image.fileName}\" was deleted. Would you like to restore it to your opsec or delete it permanently from storage?") },
             confirmButton = {
                 TextButton(
                     onClick = {

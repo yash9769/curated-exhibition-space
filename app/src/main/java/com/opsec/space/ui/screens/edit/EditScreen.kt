@@ -1,4 +1,4 @@
-package com.gallery.app.ui.screens.edit
+﻿package com.opsec.space.ui.screens.edit
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -40,8 +40,8 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewModelScope
-import com.gallery.app.data.model.ImageItem
-import com.gallery.app.data.repository.ImageRepository
+import com.opsec.space.data.model.ImageItem
+import com.opsec.space.data.repository.ImageRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -62,7 +62,7 @@ class EditViewModel @Inject constructor(
 
     fun loadImage(id: Long) {
         viewModelScope.launch {
-            val images = repository.getImages(com.gallery.app.utils.SortOrder.DATE_ADDED).first()
+            val images = repository.getImages(com.opsec.space.utils.SortOrder.DATE_ADDED).first()
             val deleted = repository.getDeletedImages().first()
             _imageItem.value = deleted.find { it.id == id }
                 ?: images.find { it.id == id }

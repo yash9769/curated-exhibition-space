@@ -1,4 +1,4 @@
-package com.gallery.app.ui.screens.slideshow
+﻿package com.opsec.space.ui.screens.slideshow
 
 import android.net.Uri
 import androidx.compose.animation.*
@@ -25,9 +25,9 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewModelScope
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
-import com.gallery.app.data.model.ImageItem
-import com.gallery.app.data.repository.ImageRepository
-import com.gallery.app.utils.SortOrder
+import com.opsec.space.data.model.ImageItem
+import com.opsec.space.data.repository.ImageRepository
+import com.opsec.space.utils.SortOrder
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.SharingStarted
